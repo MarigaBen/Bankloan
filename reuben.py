@@ -171,7 +171,7 @@ def main():#front end elements of the web page
     result =""
     #when 'Predict' is clicked, make the prediction and store it 
     if st.button("Predict"): 
-       result = prediction(Gender, Married, ApplicantIncome, 
+       result = prediction(Married, ApplicantIncome, 
        LoanAmount, Credit_History) 
        st.success('Your loan is {}'.format(result))
        print(LoanAmount)
